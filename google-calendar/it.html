@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Guida alla connessione con Google Calendar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-left: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Guida alla connessione con Google Calendar</p>
+</div>
+<section>
+<h2>Panoramica</h2>
+<p>M-Cal utilizza EventKit di iOS, quindi basta aggiungere il tuo account Google nelle impostazioni dell'iPhone e gli eventi di Google Calendar appariranno automaticamente in M-Cal.</p>
+</section>
+<section>
+<h2>Procedura di configurazione</h2>
+<ol>
+  <li>Apri l'app <span class="step-label">Impostazioni</span> sul tuo iPhone.</li>
+  <li>Tocca <span class="step-label">App</span>.</li>
+  <li>Tocca <span class="step-label">Calendario</span>.</li>
+  <li>Tocca <span class="step-label">Account calendario</span>.</li>
+  <li>Tocca <span class="step-label">Aggiungi account</span>, poi seleziona <span class="step-label">Google</span>.</li>
+  <li>Accedi con il tuo account Google e assicurati che <span class="step-label">Calendari</span> sia attivato.</li>
+</ol>
+<p>Fatto. Apri M-Cal e vedrai gli eventi del tuo Google Calendar.</p>
+</section>
+<section>
+<h2>Calendari delle festività</h2>
+<p>Puoi aggiungere i calendari delle festività della tua regione tramite Google Calendar.</p>
+<ol>
+  <li>Apri <a href="https://calendar.google.com" target="_blank" rel="noopener">Google Calendar</a> nel browser.</li>
+  <li>Clicca sul <strong>+</strong> accanto a "Altri calendari" sulla sinistra.</li>
+  <li>Seleziona <span class="step-label">Sfoglia calendari di interesse</span>.</li>
+  <li>Nella categoria <span class="step-label">Festività regionali</span>, seleziona i paesi desiderati.</li>
+</ol>
+<p>I calendari aggiunti verranno sincronizzati automaticamente con M-Cal tramite il tuo iPhone.</p>
+</section>
+<section>
+<h2>Risoluzione dei problemi</h2>
+<div class="note">
+  <p class="note-title">Gli eventi non vengono visualizzati</p>
+  <p>Vai su Impostazioni > App > Calendario > Account calendario e verifica che Calendari sia attivato per il tuo account Google.</p>
+</div>
+<div class="note">
+  <p class="note-title">La sincronizzazione richiede tempo</p>
+  <p>La sincronizzazione con Google Calendar può richiedere alcuni minuti. Trascina verso il basso nella schermata del calendario di M-Cal per aggiornare.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

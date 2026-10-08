@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Google Calendar Setup Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-left: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Google Calendar Setup Guide</p>
+</div>
+<section>
+<h2>Overview</h2>
+<p>M-Cal uses iOS EventKit, so once you add your Google account in iPhone Settings, your Google Calendar events will automatically appear in M-Cal.</p>
+</section>
+<section>
+<h2>Setup Steps</h2>
+<ol>
+  <li>Open the <span class="step-label">Settings</span> app on your iPhone.</li>
+  <li>Tap <span class="step-label">Apps</span>.</li>
+  <li>Tap <span class="step-label">Calendar</span>.</li>
+  <li>Tap <span class="step-label">Calendar Accounts</span>.</li>
+  <li>Tap <span class="step-label">Add Account</span>, then select <span class="step-label">Google</span>.</li>
+  <li>Sign in with your Google account and make sure <span class="step-label">Calendars</span> is turned on.</li>
+</ol>
+<p>That's it. Open M-Cal and your Google Calendar events will be displayed.</p>
+</section>
+<section>
+<h2>Holiday Calendars</h2>
+<p>You can add holiday calendars for your region through Google Calendar.</p>
+<ol>
+  <li>Open <a href="https://calendar.google.com" target="_blank" rel="noopener">Google Calendar</a> in your browser.</li>
+  <li>Click the <strong>+</strong> next to "Other calendars" on the left side.</li>
+  <li>Select <span class="step-label">Browse calendars of interest</span>.</li>
+  <li>Under <span class="step-label">Regional holidays</span>, check the countries you want to display.</li>
+</ol>
+<p>The holiday calendars you add will automatically sync to M-Cal through your iPhone.</p>
+</section>
+<section>
+<h2>Troubleshooting</h2>
+<div class="note">
+  <p class="note-title">Events not showing up</p>
+  <p>Go to Settings > Apps > Calendar > Calendar Accounts and verify that Calendars is enabled for your Google account.</p>
+</div>
+<div class="note">
+  <p class="note-title">Sync takes a while</p>
+  <p>Syncing with Google Calendar may take a few minutes. Pull down on the calendar screen in M-Cal to refresh.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Googleカレンダー連携ガイド</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-left: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Googleカレンダー連携ガイド</p>
+</div>
+<section>
+<h2>概要</h2>
+<p>M-CalはiOSのEventKit（カレンダーフレームワーク）を使用しているため、iPhoneの「設定」でGoogleアカウントを追加するだけで、Googleカレンダーの予定が自動的にM-Calに表示されます。</p>
+</section>
+<section>
+<h2>連携手順</h2>
+<ol>
+  <li>iPhoneの<span class="step-label">「設定」</span>アプリを開きます。</li>
+  <li><span class="step-label">「アプリ」</span>をタップします。</li>
+  <li><span class="step-label">「カレンダー」</span>をタップします。</li>
+  <li><span class="step-label">「カレンダーアカウント」</span>をタップします。</li>
+  <li><span class="step-label">「アカウントを追加」</span>をタップし、<span class="step-label">「Google」</span>を選択します。</li>
+  <li>Googleアカウントでログインし、<span class="step-label">「カレンダー」</span>がオンになっていることを確認します。</li>
+</ol>
+<p>以上で設定は完了です。M-Calを開くと、Googleカレンダーの予定が表示されます。</p>
+</section>
+<section>
+<h2>祝日カレンダーについて</h2>
+<p>Googleカレンダーでは、お住まいの地域の祝日カレンダーを追加できます。</p>
+<ol>
+  <li>ブラウザで<a href="https://calendar.google.com" target="_blank" rel="noopener">Google カレンダー</a>を開きます。</li>
+  <li>左側の「他のカレンダー」の横にある <strong>＋</strong> をクリックします。</li>
+  <li><span class="step-label">「関心のあるカレンダーを探す」</span>を選択します。</li>
+  <li><span class="step-label">「地域の祝日」</span>カテゴリから、表示したい国の祝日を選んでチェックを入れます。</li>
+</ol>
+<p>追加した祝日カレンダーは、iPhoneとの同期後に自動的にM-Calにも反映されます。</p>
+</section>
+<section>
+<h2>トラブルシューティング</h2>
+<div class="note">
+  <p class="note-title">予定が表示されない場合</p>
+  <p>「設定」＞「アプリ」＞「カレンダー」＞「カレンダーアカウント」で、Googleアカウントの「カレンダー」がオンになっているか確認してください。</p>
+</div>
+<div class="note">
+  <p class="note-title">同期に時間がかかる場合</p>
+  <p>Googleカレンダーとの同期には数分かかることがあります。M-Calのカレンダー画面を下にスワイプして更新してください。</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

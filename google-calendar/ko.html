@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Google 캘린더 연동 가이드</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-left: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Google 캘린더 연동 가이드</p>
+</div>
+<section>
+<h2>개요</h2>
+<p>M-Cal은 iOS EventKit을 사용하므로 iPhone 설정에서 Google 계정을 추가하면 Google 캘린더 일정이 M-Cal에 자동으로 표시됩니다.</p>
+</section>
+<section>
+<h2>연동 방법</h2>
+<ol>
+  <li>iPhone에서 <span class="step-label">설정</span> 앱을 엽니다.</li>
+  <li><span class="step-label">앱</span>을 탭합니다.</li>
+  <li><span class="step-label">캘린더</span>를 탭합니다.</li>
+  <li><span class="step-label">캘린더 계정</span>을 탭합니다.</li>
+  <li><span class="step-label">계정 추가</span>를 탭한 다음 <span class="step-label">Google</span>을 선택합니다.</li>
+  <li>Google 계정으로 로그인하고 <span class="step-label">캘린더</span>가 켜져 있는지 확인합니다.</li>
+</ol>
+<p>설정이 완료되었습니다. M-Cal을 열면 Google 캘린더 일정이 표시됩니다.</p>
+</section>
+<section>
+<h2>공휴일 캘린더</h2>
+<p>Google 캘린더에서 해당 지역의 공휴일 캘린더를 추가할 수 있습니다.</p>
+<ol>
+  <li>브라우저에서 <a href="https://calendar.google.com" target="_blank" rel="noopener">Google 캘린더</a>를 엽니다.</li>
+  <li>왼쪽의 "다른 캘린더" 옆에 있는 <strong>+</strong>를 클릭합니다.</li>
+  <li><span class="step-label">관심 있는 캘린더 탐색</span>을 선택합니다.</li>
+  <li><span class="step-label">지역 공휴일</span> 카테고리에서 표시할 국가를 선택합니다.</li>
+</ol>
+<p>추가한 공휴일 캘린더는 iPhone과 동기화 후 자동으로 M-Cal에 반영됩니다.</p>
+</section>
+<section>
+<h2>문제 해결</h2>
+<div class="note">
+  <p class="note-title">일정이 표시되지 않는 경우</p>
+  <p>설정 > 앱 > 캘린더 > 캘린더 계정에서 Google 계정의 캘린더가 활성화되어 있는지 확인하세요.</p>
+</div>
+<div class="note">
+  <p class="note-title">동기화에 시간이 걸리는 경우</p>
+  <p>Google 캘린더와의 동기화에는 몇 분이 걸릴 수 있습니다. M-Cal의 캘린더 화면을 아래로 당겨 새로고침하세요.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

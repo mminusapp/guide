@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Google日历连接指南</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-left: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Google日历连接指南</p>
+</div>
+<section>
+<h2>概述</h2>
+<p>M-Cal使用iOS EventKit，因此只需在iPhone设置中添加Google账户，Google日历的日程就会自动显示在M-Cal中。</p>
+</section>
+<section>
+<h2>设置步骤</h2>
+<ol>
+  <li>打开iPhone的<span class="step-label">"设置"</span>应用。</li>
+  <li>点击<span class="step-label">"App"</span>。</li>
+  <li>点击<span class="step-label">"日历"</span>。</li>
+  <li>点击<span class="step-label">"日历账户"</span>。</li>
+  <li>点击<span class="step-label">"添加账户"</span>，然后选择<span class="step-label">"Google"</span>。</li>
+  <li>使用Google账户登录，确认<span class="step-label">"日历"</span>已开启。</li>
+</ol>
+<p>设置完成。打开M-Cal即可查看Google日历的日程。</p>
+</section>
+<section>
+<h2>节假日日历</h2>
+<p>您可以通过Google日历添加所在地区的节假日日历。</p>
+<ol>
+  <li>在浏览器中打开<a href="https://calendar.google.com" target="_blank" rel="noopener">Google日历</a>。</li>
+  <li>点击左侧"其他日历"旁边的<strong>+</strong>。</li>
+  <li>选择<span class="step-label">"浏览感兴趣的日历"</span>。</li>
+  <li>在<span class="step-label">"地区节假日"</span>类别中，勾选要显示的国家。</li>
+</ol>
+<p>添加的节假日日历将在与iPhone同步后自动反映到M-Cal中。</p>
+</section>
+<section>
+<h2>故障排除</h2>
+<div class="note">
+  <p class="note-title">日程未显示</p>
+  <p>请前往"设置">"App">"日历">"日历账户"，确认Google账户的"日历"已开启。</p>
+</div>
+<div class="note">
+  <p class="note-title">同步需要时间</p>
+  <p>与Google日历的同步可能需要几分钟。在M-Cal的日历界面下拉即可刷新。</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>
