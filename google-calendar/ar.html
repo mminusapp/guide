@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>دليل إعداد تقويم Google في M-Cal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Geeza Pro', 'Noto Sans Arabic', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-inline-start: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">دليل إعداد تقويم Google</p>
+</div>
+<section>
+<h2>نظرة عامة</h2>
+<p>يستخدم M-Cal إطار EventKit في iOS، لذا بعد إضافة حساب Google في إعدادات iPhone تظهر أحداث تقويم Google تلقائيًا في M-Cal.</p>
+</section>
+<section>
+<h2>خطوات الإعداد</h2>
+<ol>
+  <li>افتح تطبيق <span class="step-label">الإعدادات</span> على iPhone.</li>
+  <li>اضغط على <span class="step-label">التطبيقات</span>.</li>
+  <li>اضغط على <span class="step-label">التقويم</span>.</li>
+  <li>اضغط على <span class="step-label">حسابات التقويم</span>.</li>
+  <li>اضغط على <span class="step-label">إضافة حساب</span>، ثم اختر <span class="step-label">Google</span> وسجّل الدخول. وإذا كان حساب Google مضافًا من قبل، فاضغط على اسم الحساب.</li>
+  <li>تأكد من تفعيل <span class="step-label">التقاويم</span>.</li>
+</ol>
+<p>هذا كل شيء. افتح M-Cal وستظهر أحداث تقويم Google.</p>
+</section>
+<section>
+<h2>تقاويم العطلات</h2>
+<p>يمكنك إضافة تقاويم العطلات الخاصة بمنطقتك من خلال تقويم Google.</p>
+<ol>
+  <li>افتح <a href="https://calendar.google.com" target="_blank" rel="noopener">تقويم Google</a> في المتصفح.</li>
+  <li>اضغط على <strong>+</strong> بجوار "تقاويم أخرى" على الجانب الأيمن.</li>
+  <li>اختر <span class="step-label">تصفّح التقاويم ذات الاهتمام</span>.</li>
+  <li>ضمن <span class="step-label">العطلات الإقليمية</span>، حدّد الدول التي تريد عرضها.</li>
+</ol>
+<p>ستتم مزامنة تقاويم العطلات التي تضيفها تلقائيًا مع M-Cal عبر iPhone.</p>
+</section>
+<section>
+<h2>حل المشكلات</h2>
+<div class="note">
+  <p class="note-title">الأحداث لا تظهر</p>
+  <p>انتقل إلى الإعدادات > التطبيقات > التقويم > حسابات التقويم وتأكد من تفعيل التقاويم لحساب Google.</p>
+</div>
+<div class="note">
+  <p class="note-title">المزامنة تستغرق وقتًا</p>
+  <p>قد تستغرق المزامنة مع تقويم Google بضع دقائق. انتظر قليلًا ثم افتح M-Cal مرة أخرى.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

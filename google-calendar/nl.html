@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Agenda instellen in M-Cal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 640px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 32px; border-bottom: 1px solid var(--border); margin-bottom: 40px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  h2 { font-size: 17px; font-weight: 700; margin: 0 0 12px; text-wrap: balance; }
+  section { margin-bottom: 36px; }
+  p { font-size: 14px; margin: 0 0 12px; color: var(--fg); }
+  ol { font-size: 14px; padding-left: 20px; margin: 0 0 12px; }
+  ol li { margin-bottom: 10px; }
+  .step-label { font-weight: 600; }
+  .note { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 16px; margin: 16px 0; font-size: 13px; }
+  .note-title { font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Handleiding: Google Agenda instellen</p>
+</div>
+<section>
+<h2>Overzicht</h2>
+<p>M-Cal gebruikt EventKit van iOS. Zodra je je Google-account toevoegt in de Instellingen van je iPhone, verschijnen je Google Agenda-afspraken automatisch in M-Cal.</p>
+</section>
+<section>
+<h2>Stappen</h2>
+<ol>
+  <li>Open de app <span class="step-label">Instellingen</span> op je iPhone.</li>
+  <li>Tik op <span class="step-label">Apps</span>.</li>
+  <li>Tik op <span class="step-label">Agenda</span>.</li>
+  <li>Tik op <span class="step-label">Agenda-accounts</span>.</li>
+  <li>Tik op <span class="step-label">Voeg account toe</span>, kies <span class="step-label">Google</span> en log in. Is je Google-account al toegevoegd, tik dan op de naam van het account.</li>
+  <li>Controleer of <span class="step-label">Agenda's</span> aanstaat.</li>
+</ol>
+<p>Dat is alles. Open M-Cal en je Google Agenda-afspraken worden getoond.</p>
+</section>
+<section>
+<h2>Feestdagenagenda's</h2>
+<p>Via Google Agenda kun je feestdagenagenda's voor jouw regio toevoegen.</p>
+<ol>
+  <li>Open <a href="https://calendar.google.com" target="_blank" rel="noopener">Google Agenda</a> in je browser.</li>
+  <li>Klik links op de <strong>+</strong> naast "Andere agenda's".</li>
+  <li>Kies <span class="step-label">Interessante agenda's zoeken</span>.</li>
+  <li>Vink onder <span class="step-label">Feestdagen in de regio</span> de landen aan die je wilt tonen.</li>
+</ol>
+<p>De toegevoegde feestdagenagenda's worden via je iPhone automatisch met M-Cal gesynchroniseerd.</p>
+</section>
+<section>
+<h2>Problemen oplossen</h2>
+<div class="note">
+  <p class="note-title">Afspraken verschijnen niet</p>
+  <p>Ga naar Instellingen > Apps > Agenda > Agenda-accounts en controleer of Agenda's aanstaat voor je Google-account.</p>
+</div>
+<div class="note">
+  <p class="note-title">Synchroniseren duurt even</p>
+  <p>Synchroniseren met Google Agenda kan een paar minuten duren. Wacht even en open M-Cal opnieuw.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>
