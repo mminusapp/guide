@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Einstellungen – Anleitung</title>
+<meta name="description" content="Was jede Einstellung bewirkt">
+<link rel="alternate" hreflang="ja" href="https://mminusapp.github.io/guide/settings/">
+<link rel="alternate" hreflang="en" href="https://mminusapp.github.io/guide/settings/en.html">
+<link rel="alternate" hreflang="ko" href="https://mminusapp.github.io/guide/settings/ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mminusapp.github.io/guide/settings/zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mminusapp.github.io/guide/settings/zh-Hant.html">
+<link rel="alternate" hreflang="fr" href="https://mminusapp.github.io/guide/settings/fr.html">
+<link rel="alternate" hreflang="es" href="https://mminusapp.github.io/guide/settings/es.html">
+<link rel="alternate" hreflang="it" href="https://mminusapp.github.io/guide/settings/it.html">
+<link rel="alternate" hreflang="de" href="https://mminusapp.github.io/guide/settings/de.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mminusapp.github.io/guide/settings/pt-BR.html">
+<link rel="alternate" hreflang="nl" href="https://mminusapp.github.io/guide/settings/nl.html">
+<link rel="alternate" hreflang="ar" href="https://mminusapp.github.io/guide/settings/ar.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 680px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin: 0 0 20px; }
+  .langs .cur { font-weight: 700; color: var(--fg); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-wrap: balance; scroll-margin-top: 16px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; text-wrap: balance; }
+  section { margin-bottom: 40px; }
+  .item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .item:last-child { border-bottom: 0; }
+  p { font-size: 14px; margin: 0 0 8px; color: var(--fg); }
+  .item p { margin: 0; }
+  .lead { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; margin-inline-start: 8px; line-height: 1.6; vertical-align: 1px; white-space: normal; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  b { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">M-Cal Einstellungen – Anleitung — Was jede Einstellung bewirkt</p>
+</div>
+<nav class="langs" aria-label="Andere Sprachen"><a href="index.html" hreflang="ja" lang="ja">日本語</a> <a href="en.html" hreflang="en" lang="en">English</a> <a href="ko.html" hreflang="ko" lang="ko">한국어</a> <a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="fr.html" hreflang="fr" lang="fr">Français</a> <a href="es.html" hreflang="es" lang="es">Español</a> <a href="it.html" hreflang="it" lang="it">Italiano</a> <span class="cur">Deutsch</span> <a href="pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="nl.html" hreflang="nl" lang="nl">Nederlands</a> <a href="ar.html" hreflang="ar" lang="ar">العربية</a></nav>
+<nav class="toc"><a href="#start">Erste Schritte</a> <a href="#cal">Kalender</a> <a href="#lang">Sprache</a> <a href="#disp">Anzeige</a> <a href="#notif">Mitteilungen</a> <a href="#defaults">Standardeinstellungen / Neuer Termin</a> <a href="#tz">Zeitzone</a> <a href="#other">Sonstiges</a></nav>
+<section id="start">
+<h2>Erste Schritte</h2>
+<p class="lead" style="margin-top:12px;color:var(--fg);font-size:14px">Öffne die Einstellungen über das Zahnrad-Symbol auf dem Kalenderbildschirm. Auf dem iPhone tippst du oben auf dem Bildschirm auf das Zahnrad. Auf dem Mac klickst du oben links auf das Zahnrad.</p>
+<p class="lead" style="color:var(--fg);font-size:14px">Alle Einstellungen werden nur auf deinem Gerät gespeichert. Es wird nichts irgendwohin gesendet.</p>
+</section>
+<section id="cal">
+<h2>Kalender</h2>
+<div class="item">
+<h3>Zugriff auf den Kalender</h3>
+<p>M-Cal zeigt die Kalender dieses Geräts an. Wenn deine Termine nicht erscheinen, erlaube den Zugriff auf den Kalender. Solange der Zugriff nicht erlaubt ist, zeigt der Einstellungsbildschirm eine Schaltfläche <b>Erlauben</b> oder <b>Einstellungen öffnen</b>.</p>
+</div>
+<div class="item">
+<h3>Kalender-Account hinzufügen</h3>
+<p>Hier gelangst du zum Hinzufügen weiterer Kalenderaccounts, etwa von Google oder iCloud. Auf dem iPhone öffnet sich der Bereich „Kalender-Accounts“ der Einstellungen-App, auf dem Mac „Internetaccounts“ in den Systemeinstellungen. Termine hinzugefügter Accounts erscheinen automatisch in M-Cal.</p>
+</div>
+<div class="item">
+<h3>Anleitung: Google Kalender verbinden<span class="badge">Nur iPhone</span></h3>
+<p>Die Schritte zum Verbinden von Google Kalender stehen in einer eigenen Anleitung.</p>
+<p style="margin-top:6px"><a href="../google-calendar/de.html">Anleitung zu Google Kalender öffnen</a></p>
+</div>
+</section>
+<section id="lang">
+<h2>Sprache</h2>
+<div class="item">
+<h3>Sprache</h3>
+<p>Wähle die Sprache, die M-Cal verwendet. Die Änderung gilt sofort.</p>
+</div>
+</section>
+<section id="disp">
+<h2>Anzeige</h2>
+<div class="item">
+<h3>Zeitformat</h3>
+<p>Wähle, ob die Uhrzeit im 12-Stunden-Format (AM/PM) oder im 24-Stunden-Format angezeigt wird.</p>
+</div>
+<div class="item">
+<h3>Wochenbeginn</h3>
+<p>Wähle den ersten Tag der Woche: Montag oder Sonntag (bei arabischer App-Sprache steht auch Samstag zur Wahl).</p>
+</div>
+<div class="item">
+<h3>Hidschri-Datum anzeigen<span class="badge">Nur wenn die App auf Arabisch ist</span></h3>
+<p>Zeigt zu jedem Datum auch das Datum im Hidschri-Kalender (islamisch) an.</p>
+</div>
+<div class="item">
+<h3>Rokuyo anzeigen<span class="badge">Nur wenn die App auf Japanisch ist</span></h3>
+<p>Zeigt den Rokuyo, den traditionellen japanischen Sechstagezyklus (Senshō, Tomobiki, Senbu, Butsumetsu, Taian, Shakkō), in der Monatsansicht und an anderen Stellen.</p>
+</div>
+<div class="item">
+<h3>Zeitzonenunterstützung<span class="badge">Nur Mac</span></h3>
+<p>Wenn aktiviert, zeigt der Termineditor eine Zeile <b>Zeitzone</b>, mit der du für jeden Termin eine Zeitzone wählen kannst. Standardmäßig ist die Option aus. Auf dem iPhone gibt es diesen Schalter nicht: Die Zeile <b>Zeitzone</b> wird immer angezeigt.</p>
+</div>
+<div class="item">
+<h3>Kalenderwochen anzeigen</h3>
+<p>Zeigt an, die wievielte Woche des Jahres jede Woche ist.</p>
+</div>
+<div class="item">
+<h3>Vergangene Termine abdunkeln</h3>
+<p>Blendet bereits vergangene Termine ab, damit bevorstehende Termine hervorstechen.</p>
+</div>
+<div class="item">
+<h3>Wichtig-Leiste anzeigen</h3>
+<p>Zeigt oben auf dem Bildschirm deinen nächsten <b>Wichtig</b>-Termin samt verbleibenden Tagen an. Um einen Termin als wichtig zu markieren, aktiviere im Termineditor <b>Wichtig</b>.</p>
+</div>
+<div class="item">
+<h3>Erscheinungsbild</h3>
+<p>Wähle die Bildschirmhelligkeit: <b>System</b> (folgt deinem Gerät), <b>Hell</b> oder <b>Dunkel</b>.</p>
+</div>
+<div class="item">
+<h3>Karten-App</h3>
+<p>Wähle, welche App den Ort eines Termins öffnet: Apple Karten oder Google Maps.</p>
+</div>
+</section>
+<section id="notif">
+<h2>Mitteilungen</h2>
+<div class="item">
+<h3>Berechtigung</h3>
+<p>Erinnerungen brauchen die Erlaubnis für Mitteilungen. Wenn du sie noch nicht erteilt hast, kannst du das hier tun. Nach einer Ablehnung änderst du sie in den Systemeinstellungen deines Geräts.</p>
+</div>
+<div class="item">
+<h3>Badge</h3>
+<p>Zeigt die Anzahl der heutigen Termine auf dem App-Symbol an. Beim Einschalten wirst du eventuell nach der Erlaubnis für Mitteilungen gefragt.</p>
+</div>
+</section>
+<section id="defaults">
+<h2>Standardeinstellungen / Neuer Termin</h2>
+<p class="lead">Das sind die Startwerte für neue Termine. Beim Anlegen kannst du sie für jeden Termin ändern.</p>
+<div class="item">
+<h3>Erinnerung</h3>
+<p>Die Start-Erinnerung für neue Termine, von <b>Keine</b> bis 1 Woche vorher.</p>
+</div>
+<div class="item">
+<h3>Ganztägige Erinnerung</h3>
+<p>Die Start-Erinnerung für neue ganztägige Termine: keine Erinnerung, am selben Tag (00:00), am selben Tag (9:00), 1 Tag vorher (9:00), 2 Tage vorher (9:00), 1 Woche vorher (9:00) oder <b>Benutzerdefiniert</b>, um die Uhrzeit am Tag selbst festzulegen.</p>
+</div>
+<div class="item">
+<h3>Termindauer</h3>
+<p>Die Start-Dauer neuer Termine, von 15 Minuten bis 2 Stunden.</p>
+</div>
+<div class="item">
+<h3>Kalender</h3>
+<p>Der Kalender, in dem neue Termine gespeichert werden. Mit <b>Standard</b> landen sie im Standardkalender, der in der Kalender-App deines Geräts festgelegt ist.</p>
+</div>
+</section>
+<section id="tz">
+<h2>Zeitzone<span class="badge">Ab Version 1.0.4</span></h2>
+<div class="item">
+<h3>Zeitzone für jeden Termin</h3>
+<p>Du kannst für jeden Termin eine Zeitzone wählen. Wenn du zum Beispiel in Japan „19:00–23:00 Pariser Zeit“ einträgst, erscheint der Termin in japanischer Zeit am frühen Morgen des nächsten Tages. Sobald du in Paris ankommst und sich die Zeitzone deines Geräts ändert, erscheint er um 19:00–23:00.</p>
+</div>
+<div class="item">
+<h3>Anzeige in den Termindetails</h3>
+<p>Die Termindetails zeigen die Uhrzeit in der Zeitzone deines Geräts und zusätzlich die Uhrzeit in der eigenen Zeitzone des Termins (zum Beispiel Paris 19:00–23:00). Bei Terminen in derselben Zeitzone wie dein Gerät erscheint nichts Zusätzliches.</p>
+</div>
+<div class="item">
+<h3>Schwebend</h3>
+<p><b>Schwebend</b> erstellt einen Termin ohne Zeitzone: Er wird überall zur gleichen Uhrzeit angezeigt (19:00 bleibt 19:00). Das passt zu Dingen wie „jeden Morgen um 7 Uhr joggen“. Für Termine, die weltweit zu einem bestimmten Zeitpunkt stattfinden, etwa Flüge und Meetings, gib eine Zeitzone an.</p>
+</div>
+<div class="item">
+<h3>Ganztägig</h3>
+<p>Ganztägige Termine sind von Zeitzonen unabhängig. Sie erscheinen überall am selben Datum.</p>
+</div>
+<div class="item">
+<h3>Suche nach Stadt</h3>
+<p>Im Zeitzonen-Auswahlfenster kannst du nach dem Namen einer Stadt suchen. Zuletzt gewählte Zeitzonen stehen oben.</p>
+</div>
+</section>
+<section id="other">
+<h2>Sonstiges</h2>
+<div class="item">
+<h3>Datenschutzrichtlinie</h3>
+<p>Öffnet die Datenschutzerklärung von M-Cal. M-Cal erhebt keine Daten von dir.</p>
+</div>
+<div class="item">
+<h3>Support</h3>
+<p>Öffnet deine Mail-App. Schick Fragen und Wünsche an <bdi>m.minus.app@gmail.com</bdi>.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal Alle Rechte vorbehalten.</p></div>
+</body>
+</html>

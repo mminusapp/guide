@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal 设置指南</title>
+<meta name="description" content="各设置项的说明">
+<link rel="alternate" hreflang="ja" href="https://mminusapp.github.io/guide/settings/">
+<link rel="alternate" hreflang="en" href="https://mminusapp.github.io/guide/settings/en.html">
+<link rel="alternate" hreflang="ko" href="https://mminusapp.github.io/guide/settings/ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mminusapp.github.io/guide/settings/zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mminusapp.github.io/guide/settings/zh-Hant.html">
+<link rel="alternate" hreflang="fr" href="https://mminusapp.github.io/guide/settings/fr.html">
+<link rel="alternate" hreflang="es" href="https://mminusapp.github.io/guide/settings/es.html">
+<link rel="alternate" hreflang="it" href="https://mminusapp.github.io/guide/settings/it.html">
+<link rel="alternate" hreflang="de" href="https://mminusapp.github.io/guide/settings/de.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mminusapp.github.io/guide/settings/pt-BR.html">
+<link rel="alternate" hreflang="nl" href="https://mminusapp.github.io/guide/settings/nl.html">
+<link rel="alternate" hreflang="ar" href="https://mminusapp.github.io/guide/settings/ar.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 680px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin: 0 0 20px; }
+  .langs .cur { font-weight: 700; color: var(--fg); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-wrap: balance; scroll-margin-top: 16px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; text-wrap: balance; }
+  section { margin-bottom: 40px; }
+  .item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .item:last-child { border-bottom: 0; }
+  p { font-size: 14px; margin: 0 0 8px; color: var(--fg); }
+  .item p { margin: 0; }
+  .lead { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; margin-inline-start: 8px; line-height: 1.6; vertical-align: 1px; white-space: normal; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  b { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">M-Cal 设置指南 — 各设置项的说明</p>
+</div>
+<nav class="langs" aria-label="其他语言"><a href="index.html" hreflang="ja" lang="ja">日本語</a> <a href="en.html" hreflang="en" lang="en">English</a> <a href="ko.html" hreflang="ko" lang="ko">한국어</a> <span class="cur">简体中文</span> <a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="fr.html" hreflang="fr" lang="fr">Français</a> <a href="es.html" hreflang="es" lang="es">Español</a> <a href="it.html" hreflang="it" lang="it">Italiano</a> <a href="de.html" hreflang="de" lang="de">Deutsch</a> <a href="pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="nl.html" hreflang="nl" lang="nl">Nederlands</a> <a href="ar.html" hreflang="ar" lang="ar">العربية</a></nav>
+<nav class="toc"><a href="#start">开始使用</a> <a href="#cal">日历</a> <a href="#lang">语言</a> <a href="#disp">显示</a> <a href="#notif">通知</a> <a href="#defaults">默认设置 / 新建日程</a> <a href="#tz">时区</a> <a href="#other">其他</a></nav>
+<section id="start">
+<h2>开始使用</h2>
+<p class="lead" style="margin-top:12px;color:var(--fg);font-size:14px">点击日历界面上的齿轮图标即可打开设置。在 iPhone 上，点击屏幕上方的齿轮；在 Mac 上，点击左上角的齿轮。</p>
+<p class="lead" style="color:var(--fg);font-size:14px">所有设置只保存在这台设备中，不会发送到外部。</p>
+</section>
+<section id="cal">
+<h2>日历</h2>
+<div class="item">
+<h3>访问日历</h3>
+<p>M-Cal 会显示这台设备上的日历。如果日程没有显示，请允许访问日历。未允许时，设置界面会出现“<b>允许</b>”或“<b>打开设置</b>”按钮。</p>
+</div>
+<div class="item">
+<h3>添加日历账户</h3>
+<p>这是添加 Google、iCloud 等其他日历账户的入口。在 iPhone 上会打开“设置”App 中的日历账户，在 Mac 上会打开系统设置中的互联网账户。添加的账户中的日程会自动显示在 M-Cal 中。</p>
+</div>
+<div class="item">
+<h3>Google 日历连接指南<span class="badge">仅限 iPhone</span></h3>
+<p>连接 Google 日历的步骤，请参阅专门的指南。</p>
+<p style="margin-top:6px"><a href="../google-calendar/zh-Hans.html">打开 Google 日历连接指南</a></p>
+</div>
+</section>
+<section id="lang">
+<h2>语言</h2>
+<div class="item">
+<h3>语言</h3>
+<p>选择 M-Cal 使用的语言。选择后立即切换。</p>
+</div>
+</section>
+<section id="disp">
+<h2>显示</h2>
+<div class="item">
+<h3>时间格式</h3>
+<p>选择时间以 12 小时制（上午/下午）还是 24 小时制显示。</p>
+</div>
+<div class="item">
+<h3>每周开始</h3>
+<p>选择每周的第一天：星期一或星期日（应用语言为阿拉伯语时，也可选择星期六）。</p>
+</div>
+<div class="item">
+<h3>显示伊斯兰历<span class="badge">仅在应用语言为阿拉伯语时</span></h3>
+<p>在每个日期上同时显示回历（伊斯兰历）日期。</p>
+</div>
+<div class="item">
+<h3>显示六曜<span class="badge">仅在应用语言为日语时</span></h3>
+<p>在月视图等位置显示六曜，即日本传统的六天周期（先胜、友引、先负、佛灭、大安、赤口）。</p>
+</div>
+<div class="item">
+<h3>时区支持<span class="badge">仅限 Mac</span></h3>
+<p>开启后，创建和编辑日程的界面会出现“<b>时区</b>”一行，可为每个日程选择时区。默认为关闭。iPhone 没有这个开关，“<b>时区</b>”一行始终显示。</p>
+</div>
+<div class="item">
+<h3>显示周数</h3>
+<p>显示该周是一年中的第几周。</p>
+</div>
+<div class="item">
+<h3>淡化过去的日程</h3>
+<p>将已过去的日程颜色调淡，让之后的日程更醒目。</p>
+</div>
+<div class="item">
+<h3>显示重要日程栏</h3>
+<p>在屏幕上方显示最近的一个“<b>重要</b>”日程及剩余天数。要将日程标为重要，请在创建或编辑日程时开启“<b>重要</b>”。</p>
+</div>
+<div class="item">
+<h3>外观</h3>
+<p>选择屏幕明暗：“<b>系统</b>”（跟随设备）、“<b>浅色</b>”或“<b>深色</b>”。</p>
+</div>
+<div class="item">
+<h3>地图应用</h3>
+<p>选择用哪个 App 打开日程的地点：Apple 地图或 Google 地图。</p>
+</div>
+</section>
+<section id="notif">
+<h2>通知</h2>
+<div class="item">
+<h3>通知权限</h3>
+<p>日程提醒需要通知权限。如果还没有允许，可以在这里允许。拒绝过一次之后，请在设备的系统设置中更改。</p>
+</div>
+<div class="item">
+<h3>角标</h3>
+<p>在 App 图标上用数字显示今天的日程数量。开启时可能会请求通知权限。</p>
+</div>
+</section>
+<section id="defaults">
+<h2>默认设置 / 新建日程</h2>
+<p class="lead">这是新建日程时的初始值。新建时可以为每个日程单独修改。</p>
+<div class="item">
+<h3>提醒</h3>
+<p>新建日程时的提醒初始值，可选择从“<b>无</b>”到 1 周前。</p>
+</div>
+<div class="item">
+<h3>全天提醒</h3>
+<p>新建全天日程时的提醒初始值。可选择：无提醒、当天（上午 0 点）、当天（上午 9 点）、1 天前（上午 9 点）、2 天前（上午 9 点）、1 周前（上午 9 点），或由你自己决定当天通知时间的“<b>自定义</b>”。</p>
+</div>
+<div class="item">
+<h3>日程时长</h3>
+<p>新建日程时的初始时长，可选择 15 分钟到 2 小时。</p>
+</div>
+<div class="item">
+<h3>日历</h3>
+<p>新建日程默认保存到的日历。选择“<b>默认</b>”时，会保存到设备日历 App 中设定的默认日历。</p>
+</div>
+</section>
+<section id="tz">
+<h2>时区<span class="badge">1.0.4 及以上版本</span></h2>
+<div class="item">
+<h3>每个日程的时区</h3>
+<p>可以为每个日程选择时区。例如，在日本时添加“巴黎时间 19:00–23:00”的日程，按日本时间会显示在第二天的清晨。到达巴黎、设备时区改变后，则显示为 19:00–23:00。</p>
+</div>
+<div class="item">
+<h3>日程详情中的显示</h3>
+<p>日程详情中除了设备时区的时间，还会显示该日程所在时区的时间（例如 Paris 19:00–23:00）。与设备时区相同的日程不会有额外显示。</p>
+</div>
+<div class="item">
+<h3>浮动</h3>
+<p>选择“<b>浮动</b>”会得到不带时区的日程，无论身在何处都显示相同的时刻（19:00 就是 19:00）。适合“每天早上 7 点慢跑”之类的日程。航班、会议等在全球某个特定时刻发生的日程，请设置时区。</p>
+</div>
+<div class="item">
+<h3>全天</h3>
+<p>全天日程不受时区影响，无论身在何处都显示在同一天。</p>
+</div>
+<div class="item">
+<h3>按城市名搜索</h3>
+<p>在时区选择界面，可以在搜索栏中按城市名查找。最近选择过的时区会排在上方。</p>
+</div>
+</section>
+<section id="other">
+<h2>其他</h2>
+<div class="item">
+<h3>隐私政策</h3>
+<p>打开 M-Cal 的隐私政策。M-Cal 不会收集你的数据。</p>
+</div>
+<div class="item">
+<h3>支持</h3>
+<p>会打开邮件 App。有问题或建议，请发送至 <bdi>m.minus.app@gmail.com</bdi>。</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal 保留所有权利。</p></div>
+</body>
+</html>

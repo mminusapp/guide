@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal 설정 안내</title>
+<meta name="description" content="각 설정 항목 설명">
+<link rel="alternate" hreflang="ja" href="https://mminusapp.github.io/guide/settings/">
+<link rel="alternate" hreflang="en" href="https://mminusapp.github.io/guide/settings/en.html">
+<link rel="alternate" hreflang="ko" href="https://mminusapp.github.io/guide/settings/ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mminusapp.github.io/guide/settings/zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mminusapp.github.io/guide/settings/zh-Hant.html">
+<link rel="alternate" hreflang="fr" href="https://mminusapp.github.io/guide/settings/fr.html">
+<link rel="alternate" hreflang="es" href="https://mminusapp.github.io/guide/settings/es.html">
+<link rel="alternate" hreflang="it" href="https://mminusapp.github.io/guide/settings/it.html">
+<link rel="alternate" hreflang="de" href="https://mminusapp.github.io/guide/settings/de.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mminusapp.github.io/guide/settings/pt-BR.html">
+<link rel="alternate" hreflang="nl" href="https://mminusapp.github.io/guide/settings/nl.html">
+<link rel="alternate" hreflang="ar" href="https://mminusapp.github.io/guide/settings/ar.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 680px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin: 0 0 20px; }
+  .langs .cur { font-weight: 700; color: var(--fg); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-wrap: balance; scroll-margin-top: 16px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; text-wrap: balance; }
+  section { margin-bottom: 40px; }
+  .item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .item:last-child { border-bottom: 0; }
+  p { font-size: 14px; margin: 0 0 8px; color: var(--fg); }
+  .item p { margin: 0; }
+  .lead { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; margin-inline-start: 8px; line-height: 1.6; vertical-align: 1px; white-space: normal; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  b { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">M-Cal 설정 안내 — 각 설정 항목 설명</p>
+</div>
+<nav class="langs" aria-label="다른 언어"><a href="index.html" hreflang="ja" lang="ja">日本語</a> <a href="en.html" hreflang="en" lang="en">English</a> <span class="cur">한국어</span> <a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="fr.html" hreflang="fr" lang="fr">Français</a> <a href="es.html" hreflang="es" lang="es">Español</a> <a href="it.html" hreflang="it" lang="it">Italiano</a> <a href="de.html" hreflang="de" lang="de">Deutsch</a> <a href="pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="nl.html" hreflang="nl" lang="nl">Nederlands</a> <a href="ar.html" hreflang="ar" lang="ar">العربية</a></nav>
+<nav class="toc"><a href="#start">시작하기</a> <a href="#cal">캘린더</a> <a href="#lang">언어</a> <a href="#disp">표시</a> <a href="#notif">알림</a> <a href="#defaults">기본 설정 / 새 일정</a> <a href="#tz">시간대</a> <a href="#other">기타</a></nav>
+<section id="start">
+<h2>시작하기</h2>
+<p class="lead" style="margin-top:12px;color:var(--fg);font-size:14px">캘린더 화면의 톱니바퀴 아이콘으로 설정을 엽니다. iPhone에서는 화면 위쪽의 톱니바퀴를 탭하고, Mac에서는 왼쪽 위의 톱니바퀴를 클릭하세요.</p>
+<p class="lead" style="color:var(--fg);font-size:14px">모든 설정은 이 기기 안에만 저장되며, 외부로 전송되지 않습니다.</p>
+</section>
+<section id="cal">
+<h2>캘린더</h2>
+<div class="item">
+<h3>캘린더 접근</h3>
+<p>M-Cal은 이 기기의 캘린더를 보여 주는 앱입니다. 일정이 보이지 않으면 캘린더 접근을 허용해 주세요. 허용되지 않은 경우 설정 화면에 <b>허용</b> 또는 <b>설정 열기</b> 버튼이 나타납니다.</p>
+</div>
+<div class="item">
+<h3>캘린더 계정 추가</h3>
+<p>Google, iCloud 등 다른 캘린더 계정을 추가하는 입구입니다. iPhone에서는 설정 앱의 캘린더 계정이, Mac에서는 시스템 설정의 인터넷 계정이 열립니다. 추가한 계정의 일정은 자동으로 M-Cal에 표시됩니다.</p>
+</div>
+<div class="item">
+<h3>Google 캘린더 연동 가이드<span class="badge">iPhone 전용</span></h3>
+<p>Google 캘린더를 연결하는 방법은 별도의 안내에서 설명합니다.</p>
+<p style="margin-top:6px"><a href="../google-calendar/ko.html">Google 캘린더 연동 안내 열기</a></p>
+</div>
+</section>
+<section id="lang">
+<h2>언어</h2>
+<div class="item">
+<h3>언어</h3>
+<p>M-Cal에서 사용할 언어를 선택합니다. 선택하면 바로 바뀝니다.</p>
+</div>
+</section>
+<section id="disp">
+<h2>표시</h2>
+<div class="item">
+<h3>시간 형식</h3>
+<p>시간을 12시간 형식(오전/오후)으로 표시할지 24시간 형식으로 표시할지 선택합니다.</p>
+</div>
+<div class="item">
+<h3>주 시작</h3>
+<p>한 주의 첫 요일을 월요일 또는 일요일 중에서 선택합니다(앱 언어가 아랍어이면 토요일도 선택할 수 있습니다).</p>
+</div>
+<div class="item">
+<h3>히즈라력 표시<span class="badge">앱 언어가 아랍어일 때만</span></h3>
+<p>각 날짜와 함께 히즈라력(이슬람력) 날짜를 표시합니다.</p>
+</div>
+<div class="item">
+<h3>로쿠요 표시<span class="badge">앱 언어가 일본어일 때만</span></h3>
+<p>월 보기 등에 일본의 전통 6일 주기인 육요(선승·도모비키·선부·불멸·대안·적구)를 표시합니다.</p>
+</div>
+<div class="item">
+<h3>시간대 지원<span class="badge">Mac 전용</span></h3>
+<p>켜면 일정 만들기·편집 화면에 <b>시간대</b> 행이 나타나, 일정마다 시간대를 선택할 수 있습니다. 기본값은 꺼짐입니다. iPhone에는 이 설정이 없으며 <b>시간대</b> 행이 항상 표시됩니다.</p>
+</div>
+<div class="item">
+<h3>주 번호 표시</h3>
+<p>그 주가 1년 중 몇 번째 주인지 표시합니다.</p>
+</div>
+<div class="item">
+<h3>지난 일정 흐리게</h3>
+<p>지난 일정의 색을 옅게 해서 앞으로의 일정이 눈에 띄게 합니다.</p>
+</div>
+<div class="item">
+<h3>중요 일정 바 표시</h3>
+<p><b>중요</b>로 지정한 일정 중 가장 가까운 일정을 남은 일수와 함께 화면 위쪽에 표시합니다. 일정을 중요로 지정하려면 만들기·편집 화면에서 <b>중요</b>를 켜세요.</p>
+</div>
+<div class="item">
+<h3>외관</h3>
+<p>화면 밝기를 <b>시스템</b>(기기 설정에 따름), <b>라이트</b>, <b>다크</b> 중에서 선택합니다.</p>
+</div>
+<div class="item">
+<h3>지도 앱</h3>
+<p>일정의 장소를 열 지도 앱을 Apple 지도 또는 Google 지도 중에서 선택합니다.</p>
+</div>
+</section>
+<section id="notif">
+<h2>알림</h2>
+<div class="item">
+<h3>알림 허용</h3>
+<p>일정 알림을 받으려면 알림 허용이 필요합니다. 아직 허용하지 않았다면 여기서 허용할 수 있습니다. 한 번 거부한 뒤에는 기기의 시스템 설정에서 바꾸세요.</p>
+</div>
+<div class="item">
+<h3>배지 표시</h3>
+<p>앱 아이콘에 오늘의 일정 수를 숫자로 표시합니다. 켜면 알림 허용을 요청할 수 있습니다.</p>
+</div>
+</section>
+<section id="defaults">
+<h2>기본 설정 / 새 일정</h2>
+<p class="lead">새 일정을 만들 때의 초기값입니다. 만들 때 일정마다 바꿀 수 있습니다.</p>
+<div class="item">
+<h3>알림</h3>
+<p>새 일정을 만들 때의 알림 초기값입니다. <b>없음</b>부터 1주일 전까지 선택할 수 있습니다.</p>
+</div>
+<div class="item">
+<h3>종일 알림</h3>
+<p>종일 일정을 만들 때의 알림 초기값입니다. 알림 없음, 당일(오전 0시), 당일(오전 9시), 1일 전(오전 9시), 2일 전(오전 9시), 1주일 전(오전 9시), 또는 당일 알림 시각을 직접 정하는 <b>사용자 지정</b> 중에서 선택할 수 있습니다.</p>
+</div>
+<div class="item">
+<h3>일정 길이</h3>
+<p>새 일정을 만들 때의 초기 길이입니다. 15분부터 2시간까지 선택할 수 있습니다.</p>
+</div>
+<div class="item">
+<h3>캘린더</h3>
+<p>새 일정을 저장할 캘린더의 초기값입니다. <b>기본</b>로 하면 기기의 캘린더 앱에서 정한 기본 캘린더에 저장됩니다.</p>
+</div>
+</section>
+<section id="tz">
+<h2>시간대<span class="badge">1.0.4 버전 이상</span></h2>
+<div class="item">
+<h3>일정별 시간대</h3>
+<p>일정마다 시간대(타임존)를 선택할 수 있습니다. 예를 들어 일본에 있을 때 ‘파리 시간 19:00~23:00’ 일정을 넣으면 일본 시간으로는 다음 날 이른 아침에 표시됩니다. 파리에 도착해 기기의 시간대가 바뀌면 19:00~23:00에 표시됩니다.</p>
+</div>
+<div class="item">
+<h3>일정 상세에 표시되는 내용</h3>
+<p>일정 상세에는 기기 시간대의 시각과 함께 그 일정의 시간대 시각(예: Paris 19:00~23:00)도 표시됩니다. 기기와 같은 시간대의 일정에는 추가 표시가 나타나지 않습니다.</p>
+</div>
+<div class="item">
+<h3>유동</h3>
+<p><b>유동</b>를 선택하면 시간대가 없는 일정이 되어, 어디에 있든 같은 시각(19:00이면 19:00)으로 표시됩니다. ‘매일 아침 7시 조깅’ 같은 일정에 알맞습니다. 항공편이나 회의처럼 전 세계에서 특정한 한 순간에 일어나는 일정에는 시간대를 지정하세요.</p>
+</div>
+<div class="item">
+<h3>종일</h3>
+<p>종일 일정은 시간대의 영향을 받지 않습니다. 어디에 있든 같은 날짜에 표시됩니다.</p>
+</div>
+<div class="item">
+<h3>도시 이름으로 검색</h3>
+<p>시간대 선택 화면에서 검색란에 도시 이름으로 찾을 수 있습니다. 최근에 선택한 시간대는 위쪽에 표시됩니다.</p>
+</div>
+</section>
+<section id="other">
+<h2>기타</h2>
+<div class="item">
+<h3>개인정보 처리방침</h3>
+<p>M-Cal의 개인정보 처리방침을 엽니다. M-Cal은 사용자의 데이터를 수집하지 않습니다.</p>
+</div>
+<div class="item">
+<h3>지원</h3>
+<p>메일 앱이 열립니다. 문의나 요청은 <bdi>m.minus.app@gmail.com</bdi> 으로 보내 주세요.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

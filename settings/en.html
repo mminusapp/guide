@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal Settings Guide</title>
+<meta name="description" content="What each setting does">
+<link rel="alternate" hreflang="ja" href="https://mminusapp.github.io/guide/settings/">
+<link rel="alternate" hreflang="en" href="https://mminusapp.github.io/guide/settings/en.html">
+<link rel="alternate" hreflang="ko" href="https://mminusapp.github.io/guide/settings/ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mminusapp.github.io/guide/settings/zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mminusapp.github.io/guide/settings/zh-Hant.html">
+<link rel="alternate" hreflang="fr" href="https://mminusapp.github.io/guide/settings/fr.html">
+<link rel="alternate" hreflang="es" href="https://mminusapp.github.io/guide/settings/es.html">
+<link rel="alternate" hreflang="it" href="https://mminusapp.github.io/guide/settings/it.html">
+<link rel="alternate" hreflang="de" href="https://mminusapp.github.io/guide/settings/de.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mminusapp.github.io/guide/settings/pt-BR.html">
+<link rel="alternate" hreflang="nl" href="https://mminusapp.github.io/guide/settings/nl.html">
+<link rel="alternate" hreflang="ar" href="https://mminusapp.github.io/guide/settings/ar.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 680px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin: 0 0 20px; }
+  .langs .cur { font-weight: 700; color: var(--fg); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-wrap: balance; scroll-margin-top: 16px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; text-wrap: balance; }
+  section { margin-bottom: 40px; }
+  .item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .item:last-child { border-bottom: 0; }
+  p { font-size: 14px; margin: 0 0 8px; color: var(--fg); }
+  .item p { margin: 0; }
+  .lead { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; margin-inline-start: 8px; line-height: 1.6; vertical-align: 1px; white-space: normal; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  b { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">M-Cal Settings Guide — What each setting does</p>
+</div>
+<nav class="langs" aria-label="Other languages"><a href="index.html" hreflang="ja" lang="ja">日本語</a> <span class="cur">English</span> <a href="ko.html" hreflang="ko" lang="ko">한국어</a> <a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="fr.html" hreflang="fr" lang="fr">Français</a> <a href="es.html" hreflang="es" lang="es">Español</a> <a href="it.html" hreflang="it" lang="it">Italiano</a> <a href="de.html" hreflang="de" lang="de">Deutsch</a> <a href="pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="nl.html" hreflang="nl" lang="nl">Nederlands</a> <a href="ar.html" hreflang="ar" lang="ar">العربية</a></nav>
+<nav class="toc"><a href="#start">Getting started</a> <a href="#cal">Calendar</a> <a href="#lang">Language</a> <a href="#disp">Display</a> <a href="#notif">Notifications</a> <a href="#defaults">Defaults / New Event</a> <a href="#tz">Time Zone</a> <a href="#other">Other</a></nav>
+<section id="start">
+<h2>Getting started</h2>
+<p class="lead" style="margin-top:12px;color:var(--fg);font-size:14px">Open Settings with the gear icon on the calendar screen. On iPhone, tap the gear at the top of the screen. On Mac, click the gear at the top left.</p>
+<p class="lead" style="color:var(--fg);font-size:14px">All settings are stored only on your device. Nothing is sent anywhere.</p>
+</section>
+<section id="cal">
+<h2>Calendar</h2>
+<div class="item">
+<h3>Calendar access</h3>
+<p>M-Cal shows the calendars on this device. If your events don't appear, allow calendar access. When access isn't allowed, the Settings screen shows an <b>Allow</b> or <b>Open Settings</b> button.</p>
+</div>
+<div class="item">
+<h3>Add Calendar Account</h3>
+<p>This is the entry point for adding other calendar accounts, such as Google or iCloud. On iPhone it opens the Calendar accounts in the Settings app; on Mac it opens Internet Accounts in System Settings. Events from added accounts appear in M-Cal automatically.</p>
+</div>
+<div class="item">
+<h3>Google Calendar guide<span class="badge">iPhone only</span></h3>
+<p>Step-by-step instructions for connecting Google Calendar are in a separate guide.</p>
+<p style="margin-top:6px"><a href="../google-calendar/en.html">Open the Google Calendar guide</a></p>
+</div>
+</section>
+<section id="lang">
+<h2>Language</h2>
+<div class="item">
+<h3>Language</h3>
+<p>Choose the language M-Cal uses. It changes right away.</p>
+</div>
+</section>
+<section id="disp">
+<h2>Display</h2>
+<div class="item">
+<h3>Time Format</h3>
+<p>Choose whether times are shown in 12-hour (AM/PM) or 24-hour format.</p>
+</div>
+<div class="item">
+<h3>Start of Week</h3>
+<p>Choose the first day of the week: Monday or Sunday. (When the app language is Arabic, Saturday is also available.)</p>
+</div>
+<div class="item">
+<h3>Show Hijri Dates<span class="badge">Only when the app language is Arabic</span></h3>
+<p>Shows the Hijri (Islamic) date together with each date.</p>
+</div>
+<div class="item">
+<h3>Show Rokuyo<span class="badge">Only when the app language is Japanese</span></h3>
+<p>Shows the Rokuyo, the traditional Japanese six-day cycle (Senshō, Tomobiki, Senbu, Butsumetsu, Taian, Shakkō), in the month view and elsewhere.</p>
+</div>
+<div class="item">
+<h3>Time Zone Support<span class="badge">Mac only</span></h3>
+<p>When on, the event editor shows a <b>Time Zone</b> row so you can pick a time zone for each event. It's off by default. iPhone has no such switch; the <b>Time Zone</b> row is always shown.</p>
+</div>
+<div class="item">
+<h3>Show Week Numbers</h3>
+<p>Shows which week of the year each week is.</p>
+</div>
+<div class="item">
+<h3>Dim Past Events</h3>
+<p>Fades events that have already passed so upcoming events stand out.</p>
+</div>
+<div class="item">
+<h3>Show Important Bar</h3>
+<p>Shows your nearest <b>Important</b> event at the top of the screen, together with the days remaining. To mark an event as important, turn on <b>Important</b> in the event editor.</p>
+</div>
+<div class="item">
+<h3>Appearance</h3>
+<p>Choose the screen brightness: <b>System</b> (follows your device), <b>Light</b>, or <b>Dark</b>.</p>
+</div>
+<div class="item">
+<h3>Map App</h3>
+<p>Choose which app opens an event's location: Apple Maps or Google Maps.</p>
+</div>
+</section>
+<section id="notif">
+<h2>Notifications</h2>
+<div class="item">
+<h3>Permission</h3>
+<p>Reminders need notification permission. If you haven't allowed it yet, you can do so here. After you've declined once, change it in your device's system settings.</p>
+</div>
+<div class="item">
+<h3>Badge Count</h3>
+<p>Shows the number of today's events on the app icon. Turning this on may ask for notification permission.</p>
+</div>
+</section>
+<section id="defaults">
+<h2>Defaults / New Event</h2>
+<p class="lead">These are the starting values for new events. You can change them for each event when you create it.</p>
+<div class="item">
+<h3>Reminder</h3>
+<p>The starting reminder for new events, from <b>None</b> up to 1 week before.</p>
+</div>
+<div class="item">
+<h3>All-day Reminder</h3>
+<p>The starting reminder for new all-day events: no reminder, same day (12:00 AM), same day (9:00 AM), 1 day before (9:00 AM), 2 days before (9:00 AM), 1 week before (9:00 AM), or <b>Custom</b> to pick the time on the day yourself.</p>
+</div>
+<div class="item">
+<h3>Event Duration</h3>
+<p>The starting length of new events, from 15 minutes to 2 hours.</p>
+</div>
+<div class="item">
+<h3>Calendar</h3>
+<p>The calendar new events are saved to. With <b>Default</b>, they go to the default calendar set in your device's Calendar app.</p>
+</div>
+</section>
+<section id="tz">
+<h2>Time Zone<span class="badge">Version 1.0.4 or later</span></h2>
+<div class="item">
+<h3>Time zone for each event</h3>
+<p>You can pick a time zone for each event. For example, if you add “19:00–23:00 Paris time” while you're in Japan, it appears in the early morning of the next day in Japan time. When you arrive in Paris and your device's time zone changes, it appears at 19:00–23:00.</p>
+</div>
+<div class="item">
+<h3>Shown in event details</h3>
+<p>The event details show the time in your device's time zone, plus the time in the event's own time zone (for example, Paris 19:00–23:00). Events in the same time zone as your device show nothing extra.</p>
+</div>
+<div class="item">
+<h3>Floating</h3>
+<p><b>Floating</b> makes an event without a time zone: it shows the same time wherever you are (19:00 stays 19:00). It suits things like “a 7 a.m. jog every morning”. For events at one specific moment worldwide, like flights and meetings, give them a time zone.</p>
+</div>
+<div class="item">
+<h3>All Day</h3>
+<p>All-day events aren't affected by time zones. They appear on the same date wherever you are.</p>
+</div>
+<div class="item">
+<h3>Searching by city</h3>
+<p>In the time zone picker, search by city name. The time zones you picked recently are listed at the top.</p>
+</div>
+</section>
+<section id="other">
+<h2>Other</h2>
+<div class="item">
+<h3>Privacy Policy</h3>
+<p>Opens M-Cal's privacy policy. M-Cal does not collect your data.</p>
+</div>
+<div class="item">
+<h3>Support</h3>
+<p>Opens your mail app. Send questions and requests to <bdi>m.minus.app@gmail.com</bdi>.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal All rights reserved.</p></div>
+</body>
+</html>

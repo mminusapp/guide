@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-Cal instellingengids</title>
+<meta name="description" content="Wat elke instelling doet">
+<link rel="alternate" hreflang="ja" href="https://mminusapp.github.io/guide/settings/">
+<link rel="alternate" hreflang="en" href="https://mminusapp.github.io/guide/settings/en.html">
+<link rel="alternate" hreflang="ko" href="https://mminusapp.github.io/guide/settings/ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mminusapp.github.io/guide/settings/zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mminusapp.github.io/guide/settings/zh-Hant.html">
+<link rel="alternate" hreflang="fr" href="https://mminusapp.github.io/guide/settings/fr.html">
+<link rel="alternate" hreflang="es" href="https://mminusapp.github.io/guide/settings/es.html">
+<link rel="alternate" hreflang="it" href="https://mminusapp.github.io/guide/settings/it.html">
+<link rel="alternate" hreflang="de" href="https://mminusapp.github.io/guide/settings/de.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mminusapp.github.io/guide/settings/pt-BR.html">
+<link rel="alternate" hreflang="nl" href="https://mminusapp.github.io/guide/settings/nl.html">
+<link rel="alternate" hreflang="ar" href="https://mminusapp.github.io/guide/settings/ar.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 680px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin: 0 0 20px; }
+  .langs .cur { font-weight: 700; color: var(--fg); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-wrap: balance; scroll-margin-top: 16px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; text-wrap: balance; }
+  section { margin-bottom: 40px; }
+  .item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .item:last-child { border-bottom: 0; }
+  p { font-size: 14px; margin: 0 0 8px; color: var(--fg); }
+  .item p { margin: 0; }
+  .lead { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; margin-inline-start: 8px; line-height: 1.6; vertical-align: 1px; white-space: normal; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  b { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">M-Cal instellingengids — Wat elke instelling doet</p>
+</div>
+<nav class="langs" aria-label="Andere talen"><a href="index.html" hreflang="ja" lang="ja">日本語</a> <a href="en.html" hreflang="en" lang="en">English</a> <a href="ko.html" hreflang="ko" lang="ko">한국어</a> <a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="fr.html" hreflang="fr" lang="fr">Français</a> <a href="es.html" hreflang="es" lang="es">Español</a> <a href="it.html" hreflang="it" lang="it">Italiano</a> <a href="de.html" hreflang="de" lang="de">Deutsch</a> <a href="pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <span class="cur">Nederlands</span> <a href="ar.html" hreflang="ar" lang="ar">العربية</a></nav>
+<nav class="toc"><a href="#start">Aan de slag</a> <a href="#cal">Agenda</a> <a href="#lang">Taal</a> <a href="#disp">Weergave</a> <a href="#notif">Meldingen</a> <a href="#defaults">Standaardinstellingen / Nieuwe afspraak</a> <a href="#tz">Tijdzone</a> <a href="#other">Overig</a></nav>
+<section id="start">
+<h2>Aan de slag</h2>
+<p class="lead" style="margin-top:12px;color:var(--fg);font-size:14px">Open de instellingen met het tandwielicoon op het agendascherm. Op de iPhone tik je bovenaan het scherm op het tandwiel. Op de Mac klik je linksboven op het tandwiel.</p>
+<p class="lead" style="color:var(--fg);font-size:14px">Alle instellingen worden alleen op je apparaat bewaard. Er wordt niets naar buiten verzonden.</p>
+</section>
+<section id="cal">
+<h2>Agenda</h2>
+<div class="item">
+<h3>Toegang tot de agenda</h3>
+<p>M-Cal toont de agenda’s op dit apparaat. Als je afspraken niet verschijnen, geef dan toegang tot de agenda. Zolang er geen toegang is, toont het instellingenscherm een knop <b>Sta toe</b> of <b>Open Instellingen</b>.</p>
+</div>
+<div class="item">
+<h3>Agenda-account toevoegen</h3>
+<p>Hiermee voeg je andere agenda-accounts toe, zoals Google of iCloud. Op de iPhone opent dit de Agenda-accounts in de app Instellingen; op de Mac opent het Internetaccounts in Systeeminstellingen. Afspraken van toegevoegde accounts verschijnen automatisch in M-Cal.</p>
+</div>
+<div class="item">
+<h3>Gids voor Google Agenda<span class="badge">Alleen iPhone</span></h3>
+<p>De stappen om Google Agenda te koppelen staan in een aparte gids.</p>
+<p style="margin-top:6px"><a href="../google-calendar/nl.html">Open de Google Agenda-gids</a></p>
+</div>
+</section>
+<section id="lang">
+<h2>Taal</h2>
+<div class="item">
+<h3>Taal</h3>
+<p>Kies de taal die M-Cal gebruikt. De wijziging gaat direct in.</p>
+</div>
+</section>
+<section id="disp">
+<h2>Weergave</h2>
+<div class="item">
+<h3>Tijdnotatie</h3>
+<p>Kies of de tijd in 12-uursnotatie (AM/PM) of in 24-uursnotatie wordt getoond.</p>
+</div>
+<div class="item">
+<h3>Begin van de week</h3>
+<p>Kies de eerste dag van de week: maandag of zondag (bij een Arabische app is ook zaterdag mogelijk).</p>
+</div>
+<div class="item">
+<h3>Hidjra-datums tonen<span class="badge">Alleen als de app in het Arabisch staat</span></h3>
+<p>Toont bij elke datum ook de datum volgens de Hijri-kalender (islamitisch).</p>
+</div>
+<div class="item">
+<h3>Rokuyo tonen<span class="badge">Alleen als de app in het Japans staat</span></h3>
+<p>Toont de Rokuyo, de traditionele Japanse cyclus van zes dagen (Senshō, Tomobiki, Senbu, Butsumetsu, Taian, Shakkō), in de maandweergave en elders.</p>
+</div>
+<div class="item">
+<h3>Tijdzone-ondersteuning<span class="badge">Alleen Mac</span></h3>
+<p>Als deze aan staat, toont de afspraakeditor een rij <b>Tijdzone</b> waarmee je per afspraak een tijdzone kiest. Standaard staat hij uit. Op de iPhone bestaat deze schakelaar niet: de rij <b>Tijdzone</b> wordt altijd getoond.</p>
+</div>
+<div class="item">
+<h3>Weeknummers tonen</h3>
+<p>Toont het weeknummer binnen het jaar.</p>
+</div>
+<div class="item">
+<h3>Afspraken uit het verleden dimmen</h3>
+<p>Maakt afspraken die al voorbij zijn lichter, zodat aankomende afspraken opvallen.</p>
+</div>
+<div class="item">
+<h3>Belangrijkbalk tonen</h3>
+<p>Toont bovenaan het scherm je eerstvolgende <b>Belangrijk</b>-afspraak, samen met het aantal resterende dagen. Om een afspraak als belangrijk te markeren, zet je <b>Belangrijk</b> aan in de afspraakeditor.</p>
+</div>
+<div class="item">
+<h3>Weergave</h3>
+<p>Kies de helderheid van het scherm: <b>Systeem</b> (volgt je apparaat), <b>Licht</b> of <b>Donker</b>.</p>
+</div>
+<div class="item">
+<h3>Kaart-app</h3>
+<p>Kies welke app de locatie van een afspraak opent: Apple Kaarten of Google Maps.</p>
+</div>
+</section>
+<section id="notif">
+<h2>Meldingen</h2>
+<div class="item">
+<h3>Toestemming</h3>
+<p>Herinneringen hebben toestemming voor meldingen nodig. Als je die nog niet hebt gegeven, kun je dat hier doen. Heb je eenmaal geweigerd, wijzig het dan in de systeeminstellingen van je apparaat.</p>
+</div>
+<div class="item">
+<h3>Badge-teller</h3>
+<p>Toont het aantal afspraken van vandaag op het app-icoon. Bij het aanzetten wordt mogelijk om toestemming voor meldingen gevraagd.</p>
+</div>
+</section>
+<section id="defaults">
+<h2>Standaardinstellingen / Nieuwe afspraak</h2>
+<p class="lead">Dit zijn de beginwaarden voor nieuwe afspraken. Bij het aanmaken kun je ze per afspraak wijzigen.</p>
+<div class="item">
+<h3>Herinnering</h3>
+<p>De beginherinnering voor nieuwe afspraken, van <b>Geen</b> tot 1 week van tevoren.</p>
+</div>
+<div class="item">
+<h3>Herinnering voor hele dag</h3>
+<p>De beginherinnering voor nieuwe hele-dag-afspraken: geen herinnering, dezelfde dag (00:00), dezelfde dag (9:00), 1 dag van tevoren (9:00), 2 dagen van tevoren (9:00), 1 week van tevoren (9:00), of <b>Aangepast</b> om zelf het tijdstip op de dag te kiezen.</p>
+</div>
+<div class="item">
+<h3>Duur van afspraak</h3>
+<p>De beginduur van nieuwe afspraken, van 15 minuten tot 2 uur.</p>
+</div>
+<div class="item">
+<h3>Agenda</h3>
+<p>De agenda waarin nieuwe afspraken worden bewaard. Met <b>Standaard</b> komen ze in de standaardagenda die in de Agenda-app van je apparaat is ingesteld.</p>
+</div>
+</section>
+<section id="tz">
+<h2>Tijdzone<span class="badge">Versie 1.0.4 of nieuwer</span></h2>
+<div class="item">
+<h3>Tijdzone per afspraak</h3>
+<p>Je kunt per afspraak een tijdzone kiezen. Als je bijvoorbeeld in Japan “19:00–23:00 Parijse tijd” invoert, verschijnt de afspraak in Japanse tijd de volgende dag in de vroege ochtend. Zodra je in Parijs aankomt en de tijdzone van je apparaat verandert, verschijnt hij om 19:00–23:00.</p>
+</div>
+<div class="item">
+<h3>Weergave in de afspraakdetails</h3>
+<p>De afspraakdetails tonen de tijd in de tijdzone van je apparaat, plus de tijd in de eigen tijdzone van de afspraak (bijvoorbeeld Paris 19:00–23:00). Bij afspraken in dezelfde tijdzone als je apparaat staat er niets extra.</p>
+</div>
+<div class="item">
+<h3>Zwevend</h3>
+<p><b>Zwevend</b> maakt een afspraak zonder tijdzone: hij wordt overal op hetzelfde tijdstip getoond (19:00 blijft 19:00). Dat past bij zaken als “elke ochtend om 7 uur joggen”. Geef afspraken die op één bepaald moment wereldwijd plaatsvinden, zoals vluchten en vergaderingen, wel een tijdzone.</p>
+</div>
+<div class="item">
+<h3>Hele dag</h3>
+<p>Hele-dag-afspraken worden niet beïnvloed door tijdzones. Ze verschijnen overal op dezelfde datum.</p>
+</div>
+<div class="item">
+<h3>Zoeken op stad</h3>
+<p>In de tijdzonekiezer zoek je op de naam van een stad. Recent gekozen tijdzones staan bovenaan.</p>
+</div>
+</section>
+<section id="other">
+<h2>Overig</h2>
+<div class="item">
+<h3>Privacybeleid</h3>
+<p>Opent het privacybeleid van M-Cal. M-Cal verzamelt geen gegevens van je.</p>
+</div>
+<div class="item">
+<h3>Support</h3>
+<p>Opent je mail-app. Stuur vragen en verzoeken naar <bdi>m.minus.app@gmail.com</bdi>.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal Alle rechten voorbehouden.</p></div>
+</body>
+</html>

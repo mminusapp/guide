@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guida alle impostazioni di M-Cal</title>
+<meta name="description" content="A cosa serve ogni impostazione">
+<link rel="alternate" hreflang="ja" href="https://mminusapp.github.io/guide/settings/">
+<link rel="alternate" hreflang="en" href="https://mminusapp.github.io/guide/settings/en.html">
+<link rel="alternate" hreflang="ko" href="https://mminusapp.github.io/guide/settings/ko.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://mminusapp.github.io/guide/settings/zh-Hans.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://mminusapp.github.io/guide/settings/zh-Hant.html">
+<link rel="alternate" hreflang="fr" href="https://mminusapp.github.io/guide/settings/fr.html">
+<link rel="alternate" hreflang="es" href="https://mminusapp.github.io/guide/settings/es.html">
+<link rel="alternate" hreflang="it" href="https://mminusapp.github.io/guide/settings/it.html">
+<link rel="alternate" hreflang="de" href="https://mminusapp.github.io/guide/settings/de.html">
+<link rel="alternate" hreflang="pt-BR" href="https://mminusapp.github.io/guide/settings/pt-BR.html">
+<link rel="alternate" hreflang="nl" href="https://mminusapp.github.io/guide/settings/nl.html">
+<link rel="alternate" hreflang="ar" href="https://mminusapp.github.io/guide/settings/ar.html">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap">
+<style>
+  :root { --bg: #fafafa; --fg: #1a1a1a; --muted: #6b6b6b; --border: #e5e5e5; --accent: #2d9d5a; --surface: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; } }
+  :root[data-theme="dark"] { --bg: #141414; --fg: #e8e8e8; --muted: #999; --border: #2a2a2a; --accent: #3db86a; --surface: #1c1c1c; color-scheme: dark; }
+  body { background: var(--bg); color: var(--fg); font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Noto Sans', sans-serif; line-height: 1.8; padding-inline: 24px; padding-block: 0; max-width: 680px; margin: 0 auto; }
+  .header { padding-top: 48px; padding-bottom: 28px; border-bottom: 1px solid var(--border); margin-bottom: 24px; }
+  .app-name { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; margin: 0 0 4px; }
+  .app-name span { color: var(--accent); }
+  .subtitle { font-size: 14px; color: var(--muted); margin: 0; }
+  .langs { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; margin: 0 0 20px; }
+  .langs .cur { font-weight: 700; color: var(--fg); }
+  .toc { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 13px; padding: 14px 16px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin: 0 0 36px; }
+  h2 { font-size: 18px; font-weight: 700; margin: 0 0 6px; padding-bottom: 8px; border-bottom: 1px solid var(--border); text-wrap: balance; scroll-margin-top: 16px; }
+  h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; text-wrap: balance; }
+  section { margin-bottom: 40px; }
+  .item { padding: 14px 0; border-bottom: 1px solid var(--border); }
+  .item:last-child { border-bottom: 0; }
+  p { font-size: 14px; margin: 0 0 8px; color: var(--fg); }
+  .item p { margin: 0; }
+  .lead { color: var(--muted); font-size: 13px; margin: 8px 0 0; }
+  .badge { display: inline-block; font-size: 11px; font-weight: 500; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 0 8px; margin-inline-start: 8px; line-height: 1.6; vertical-align: 1px; white-space: normal; }
+  .footer { border-top: 1px solid var(--border); padding: 24px 0 48px; margin-top: 40px; }
+  .footer p { font-size: 12px; color: var(--muted); margin: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  b { font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1 class="app-name">M<span>-</span>Cal</h1>
+  <p class="subtitle">Guida alle impostazioni di M-Cal — A cosa serve ogni impostazione</p>
+</div>
+<nav class="langs" aria-label="Altre lingue"><a href="index.html" hreflang="ja" lang="ja">日本語</a> <a href="en.html" hreflang="en" lang="en">English</a> <a href="ko.html" hreflang="ko" lang="ko">한국어</a> <a href="zh-Hans.html" hreflang="zh-Hans" lang="zh-Hans">简体中文</a> <a href="zh-Hant.html" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a> <a href="fr.html" hreflang="fr" lang="fr">Français</a> <a href="es.html" hreflang="es" lang="es">Español</a> <span class="cur">Italiano</span> <a href="de.html" hreflang="de" lang="de">Deutsch</a> <a href="pt-BR.html" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a> <a href="nl.html" hreflang="nl" lang="nl">Nederlands</a> <a href="ar.html" hreflang="ar" lang="ar">العربية</a></nav>
+<nav class="toc"><a href="#start">Per iniziare</a> <a href="#cal">Calendario</a> <a href="#lang">Lingua</a> <a href="#disp">Visualizzazione</a> <a href="#notif">Notifiche</a> <a href="#defaults">Predefiniti / Nuovo evento</a> <a href="#tz">Fuso orario</a> <a href="#other">Altro</a></nav>
+<section id="start">
+<h2>Per iniziare</h2>
+<p class="lead" style="margin-top:12px;color:var(--fg);font-size:14px">Apri le impostazioni con l’icona a forma di ingranaggio nella schermata del calendario. Su iPhone, tocca l’ingranaggio in alto sullo schermo. Su Mac, fai clic sull’ingranaggio in alto a sinistra.</p>
+<p class="lead" style="color:var(--fg);font-size:14px">Tutte le impostazioni vengono salvate solo sul tuo dispositivo. Non viene inviato nulla all’esterno.</p>
+</section>
+<section id="cal">
+<h2>Calendario</h2>
+<div class="item">
+<h3>Accesso al calendario</h3>
+<p>M-Cal mostra i calendari di questo dispositivo. Se i tuoi eventi non compaiono, consenti l’accesso al calendario. Finché l’accesso non è consentito, la schermata delle impostazioni mostra un pulsante <b>Consenti</b> o <b>Apri impostazioni</b>.</p>
+</div>
+<div class="item">
+<h3>Aggiungi account calendario</h3>
+<p>È il punto di partenza per aggiungere altri account di calendario, come Google o iCloud. Su iPhone apre gli account Calendario nell’app Impostazioni; su Mac apre Account Internet nelle Impostazioni di Sistema. Gli eventi degli account aggiunti compaiono automaticamente in M-Cal.</p>
+</div>
+<div class="item">
+<h3>Guida all&#x27;integrazione di Google Calendar<span class="badge">Solo iPhone</span></h3>
+<p>I passaggi per collegare Google Calendar sono spiegati in una guida a parte.</p>
+<p style="margin-top:6px"><a href="../google-calendar/it.html">Apri la guida a Google Calendar</a></p>
+</div>
+</section>
+<section id="lang">
+<h2>Lingua</h2>
+<div class="item">
+<h3>Lingua</h3>
+<p>Scegli la lingua usata da M-Cal. Il cambio è immediato.</p>
+</div>
+</section>
+<section id="disp">
+<h2>Visualizzazione</h2>
+<div class="item">
+<h3>Formato orario</h3>
+<p>Scegli se l’ora viene mostrata nel formato a 12 ore (AM/PM) o a 24 ore.</p>
+</div>
+<div class="item">
+<h3>Inizio settimana</h3>
+<p>Scegli il primo giorno della settimana: lunedì o domenica (se l’app è in arabo, puoi scegliere anche sabato).</p>
+</div>
+<div class="item">
+<h3>Mostra date islamiche<span class="badge">Solo se l’app è in arabo</span></h3>
+<p>Mostra la data del calendario Hijri (islamico) insieme a ogni data.</p>
+</div>
+<div class="item">
+<h3>Mostra Rokuyo<span class="badge">Solo se l’app è in giapponese</span></h3>
+<p>Mostra il Rokuyo, il tradizionale ciclo giapponese di sei giorni (Senshō, Tomobiki, Senbu, Butsumetsu, Taian, Shakkō), nella vista mensile e altrove.</p>
+</div>
+<div class="item">
+<h3>Supporto fusi orari<span class="badge">Solo Mac</span></h3>
+<p>Se attivata, l’editor degli eventi mostra una riga <b>Fuso orario</b> per scegliere un fuso orario per ogni evento. È disattivata per impostazione predefinita. Su iPhone questa impostazione non esiste: la riga <b>Fuso orario</b> è sempre visibile.</p>
+</div>
+<div class="item">
+<h3>Mostra numeri settimana</h3>
+<p>Mostra a quale settimana dell’anno corrisponde ogni settimana.</p>
+</div>
+<div class="item">
+<h3>Attenua eventi passati</h3>
+<p>Attenua gli eventi già passati per mettere in risalto quelli futuri.</p>
+</div>
+<div class="item">
+<h3>Mostra barra importanti</h3>
+<p>Mostra in alto sullo schermo l’evento <b>Importante</b> più vicino, insieme ai giorni mancanti. Per segnare un evento come importante, attiva <b>Importante</b> nell’editor dell’evento.</p>
+</div>
+<div class="item">
+<h3>Aspetto</h3>
+<p>Scegli la luminosità dello schermo: <b>Sistema</b> (segue il dispositivo), <b>Chiaro</b> o <b>Scuro</b>.</p>
+</div>
+<div class="item">
+<h3>App mappe</h3>
+<p>Scegli quale app apre il luogo di un evento: Mappe di Apple o Google Maps.</p>
+</div>
+</section>
+<section id="notif">
+<h2>Notifiche</h2>
+<div class="item">
+<h3>Autorizzazione</h3>
+<p>I promemoria richiedono l’autorizzazione per le notifiche. Se non l’hai ancora concessa, puoi farlo da qui. Dopo un rifiuto, modificala nelle impostazioni di sistema del dispositivo.</p>
+</div>
+<div class="item">
+<h3>Badge</h3>
+<p>Mostra sull’icona dell’app il numero di eventi di oggi. Attivandola, potrebbe essere richiesta l’autorizzazione per le notifiche.</p>
+</div>
+</section>
+<section id="defaults">
+<h2>Predefiniti / Nuovo evento</h2>
+<p class="lead">Sono i valori iniziali dei nuovi eventi. Puoi cambiarli per ogni evento mentre lo crei.</p>
+<div class="item">
+<h3>Promemoria</h3>
+<p>Il promemoria iniziale dei nuovi eventi, da <b>Nessuno</b> fino a 1 settimana prima.</p>
+</div>
+<div class="item">
+<h3>Promemoria tutto il giorno</h3>
+<p>Il promemoria iniziale dei nuovi eventi di tutto il giorno: nessun promemoria, stesso giorno (00:00), stesso giorno (9:00), 1 giorno prima (9:00), 2 giorni prima (9:00), 1 settimana prima (9:00) oppure <b>Personalizzato</b> per scegliere tu l’ora del giorno.</p>
+</div>
+<div class="item">
+<h3>Durata evento</h3>
+<p>La durata iniziale dei nuovi eventi, da 15 minuti a 2 ore.</p>
+</div>
+<div class="item">
+<h3>Calendario</h3>
+<p>Il calendario in cui vengono salvati i nuovi eventi. Con <b>Predefinito</b>, vanno nel calendario predefinito impostato nell’app Calendario del dispositivo.</p>
+</div>
+</section>
+<section id="tz">
+<h2>Fuso orario<span class="badge">Versione 1.0.4 o successiva</span></h2>
+<div class="item">
+<h3>Fuso orario di ogni evento</h3>
+<p>Puoi scegliere un fuso orario per ogni evento. Per esempio, se aggiungi «19:00–23:00 ora di Parigi» mentre sei in Giappone, compare la mattina presto del giorno dopo, all’ora giapponese. Quando arrivi a Parigi e il fuso del dispositivo cambia, compare alle 19:00–23:00.</p>
+</div>
+<div class="item">
+<h3>Cosa compare nei dettagli dell’evento</h3>
+<p>I dettagli dell’evento mostrano l’ora nel fuso del tuo dispositivo, più l’ora nel fuso proprio dell’evento (per esempio, Paris 19:00–23:00). Se l’evento ha lo stesso fuso del dispositivo, non compare nulla in più.</p>
+</div>
+<div class="item">
+<h3>Flottante</h3>
+<p><b>Flottante</b> crea un evento senza fuso orario: viene mostrato alla stessa ora ovunque ti trovi (le 19:00 restano le 19:00). Va bene per cose come «una corsa ogni mattina alle 7». Per gli eventi che avvengono in un momento preciso per tutto il mondo, come voli e riunioni, assegna un fuso orario.</p>
+</div>
+<div class="item">
+<h3>Tutto il giorno</h3>
+<p>Gli eventi di tutto il giorno non sono influenzati dai fusi orari. Compaiono nella stessa data ovunque ti trovi.</p>
+</div>
+<div class="item">
+<h3>Ricerca per città</h3>
+<p>Nel selettore del fuso orario, cerca per nome della città. I fusi scelti di recente sono elencati in alto.</p>
+</div>
+</section>
+<section id="other">
+<h2>Altro</h2>
+<div class="item">
+<h3>Informativa sulla privacy</h3>
+<p>Apre l’informativa sulla privacy di M-Cal. M-Cal non raccoglie i tuoi dati.</p>
+</div>
+<div class="item">
+<h3>Supporto</h3>
+<p>Apre la tua app di posta. Invia domande e richieste a <bdi>m.minus.app@gmail.com</bdi>.</p>
+</div>
+</section>
+<div class="footer"><p>© 2026 M-Cal Tutti i diritti riservati.</p></div>
+</body>
+</html>
